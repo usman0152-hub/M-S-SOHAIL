@@ -1209,7 +1209,7 @@ class SaleOrderLine(models.Model):
         for record in self:
             record.price_subtotal =  record.total_without
 
-    #hideprice_subtotal from original compute and add our compute for price subtotal
+    #hideprice_subtotal from original compute and add our compute for price subtotal edit by usman
     @api.depends('product_uom_qty', 'discount', 'price_unit', 'tax_id')
     def _compute_amount(self):
         """
