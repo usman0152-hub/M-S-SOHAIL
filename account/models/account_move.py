@@ -114,7 +114,6 @@ class AccountMove(models.Model):
         return journal
 
     # TODO remove in masters......
-    # TODO
     @api.model
     def _get_default_invoice_date(self):
         warnings.warn("Method '_get_default_invoice_date()' is deprecated and has been removed.", DeprecationWarning)
