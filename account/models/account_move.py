@@ -113,7 +113,8 @@ class AccountMove(models.Model):
 
         return journal
 
-    # TODO remove in master....
+    # TODO remove in masters......
+    # TODO
     @api.model
     def _get_default_invoice_date(self):
         warnings.warn("Method '_get_default_invoice_date()' is deprecated and has been removed.", DeprecationWarning)
@@ -175,7 +176,7 @@ class AccountMove(models.Model):
     bill_image = fields.Image("Bill Attachment")
     vessel = fields.Char("Vessel")
     shipping = fields.Char("Ship From")
-    bank = fields.Char("Bank", default="Habib Metropolitan Band ltd")
+    bank = fields.Char("Bank", default="Habib Metropolitan Band ltd..")
     importer = fields.Char("Importers")
     cheque = fields.Char(string="cheque no")
     image = fields.Image("Cheque Attachment")
